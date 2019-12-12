@@ -1,0 +1,132 @@
+---
+server:
+  port: 1004
+  context-path: /
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wyy?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: microservice-student
+  profiles: provider-hystrix-1004
+
+eureka:
+  instance:
+    hostname: localhost
+    appname: microservice-student
+    instance-id: microservice-student:1004
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka2001.wyy.com:2001/eureka/,http://eureka2002.wyy.com:2002/eureka/,http://eureka2003.wyy.com:2003/eureka/
+
+info:
+  groupId: com.wyy.SpringCloud
+  artifactId: microservice-student-provider-hystrix-1004
+  version: 1.0-SNAPSHOT
+  userName: http://wyy.com
+  phone: 123456
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1500
+
+---
+server:
+  port: 1005
+  context-path: /
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wyy?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: microservice-student
+  profiles: provider-hystrix-1005
+
+eureka:
+  instance:
+    hostname: localhost
+    appname: microservice-student
+    instance-id: microservice-student:1005
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka2001.wyy.com:2001/eureka/,http://eureka2002.wyy.com:2002/eureka/,http://eureka2003.wyy.com:2003/eureka/
+
+info:
+  groupId: com.wyy.SpringCloud
+  artifactId: microservice-student-provider-hystrix-1005
+  version: 1.0-SNAPSHOT
+  userName: http://wyy.com
+  phone: 123456
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1500
+
+---
+server:
+  port: 1006
+  context-path: /
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wyy?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: microservice-student
+  profiles: provider-hystrix-1006
+
+eureka:
+  instance:
+    hostname: localhost
+    appname: microservice-student
+    instance-id: microservice-student:1006
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka2001.wyy.com:2001/eureka/,http://eureka2002.wyy.com:2002/eureka/,http://eureka2003.wyy.com:2003/eureka/
+
+info:
+  groupId: com.wyy.SpringCloud
+  artifactId: microservice-student-provider-hystrix-1006
+  version: 1.0-SNAPSHOT
+  userName: http://wyy.com
+  phone: 123456
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1500
+

@@ -1,0 +1,28 @@
+server:
+  port: 3001
+  context-path: /
+spring:
+  application:
+    name: microservice-zuul
+eureka:
+  instance:
+    instance-id: microservice-zuul:3001
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka2001.wyy.com:2001/eureka/,http://eureka2002.wyy.com:2002/eureka/,http://eureka2003.wyy.com:2003/eureka/
+info:
+  groupId: com.wyy.SpringCloud
+  artifactId: microservice-zuul-3001
+  version: 1.0-SNAPSHOT
+  userName: http://wyy.com
+  phone: 123456
+
+zuul:
+  routes:
+    studentServer.serviceId: microservice-student
+    studentServer.path: /studentServer/**
+  ignored-services: "*"
+  prefix: /wyy
+
+

@@ -1,0 +1,33 @@
+server:
+  port: 1001
+  context-path: /
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wyy?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: microservice-student
+eureka:
+  instance:
+    hostname: localhost
+    appname: microservice-student
+    instance-id: microservice-student:1001
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://eureka2001.wyy.com:2001/eureka/,http://eureka2002.wyy.com:2002/eureka/,http://eureka2003.wyy.com:2003/eureka/
+info:
+  groupId: com.wyy.SpringCloud
+  artifactId: microservice-student-provider-1001
+  version: 1.0-SNAPSHOT
+  userName: http://aaa.com
+  phone: 123456
+
+

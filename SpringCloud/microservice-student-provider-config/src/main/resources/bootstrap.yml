@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: microservice-student-provider-config
+  cloud:
+    config:
+      name: provider_config
+      uri: http://configserver.wyy.com:4001  # 配置configserver地址
+      profile: dev  # 级别
+      label: master  # 分支 git中 默认master

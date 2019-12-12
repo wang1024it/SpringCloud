@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: application-dev
+  cloud:
+    config:
+      name: crm
+      uri: http://configserver.wyy.com:4001
+      profile: test
+      label: master
+      fail-fast: true

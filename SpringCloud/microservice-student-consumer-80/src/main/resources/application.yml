@@ -1,0 +1,8 @@
+server:
+  port: 8023
+  context-path: /
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka2001.wyy.com:2001/eureka/,http://eureka2002.wyy.com:2002/eureka/,http://eureka2003.wyy.com:2003/eureka/
+    register-with-eureka: false

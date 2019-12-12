@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-common/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-student-consumer-80/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-student-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-student-consumer-feign-80/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-student-provider-hystrix-1004/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-zuul-3001/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-student-provider-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-student-provider-config/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-student-provider-1001/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-student-consumer-hystrix-turbine-91/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-student-consumer-hystrix-dashboard-90/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-eureka-server-config/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-config-server-4001/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-config-client-5001/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+OSVersion:10.0.16299
+OSType:x64
+ScreenResolution:1536x864
+CPUProcessor:Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
+CPUCores:8
+MemorySize:8066MB
+GPU0:NVIDIA GeForce GTX 1050
+GPU0MemorySize:4096MB
+GPU1:Intel(R) UHD Graphics 630
+GPU1MemorySize:1024MB
+DirectXVersion:DirectX 12
+OpenGLRenderer:Intel(R) UHD Graphics 630
+OpenGLVersion:4.5.0 - Build 23.20.16.4973
